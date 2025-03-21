@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST 377 - Assignment 1</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header-bar {
+            text-align: center;
+            color: white;
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main-content {
+            width: 65%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box {
+            background-color: #eef;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .linkedin-logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header-bar">
+        <h1>INST 377 - Class Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="gamespage.html">Games</a></li>
+            <li><a href="contactspage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Announcements</h2>
+            
+            <div class="content-box">
+                <h3>LinkedIn Profile</h3>
+                <p>Connect with me on LinkedIn for networking opportunities!</p>
+                <a href="https://www.linkedin.com/in/favourfatusin/" class="linkedin-logo">
+                    <img src="https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+            
+            <div class="content-box">
+                <h3>Upcoming Events</h3>
+                <p>Stay tuned for upcoming workshops and study sessions.</p>
+            </div>
+            
+            <div class="content-box">
+                <h3>Class Updates</h3>
+                <p>Check back here for important class announcements.</p>
+            </div>
+        </div>
+        
+        <aside class="sidebar">
+            <h2>Contact Info</h2>
+            <p><strong>Name:</strong> Favour Fatusin</p>
+            <p><strong>Email:</strong> ffatusi1@umd.edu</p>
+            <a href="contactspage.html" class="contact-button">Contact</a>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 INST 377 - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
