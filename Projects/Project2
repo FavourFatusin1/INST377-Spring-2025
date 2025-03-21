@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name = "viewport" content="width=device-width,  initial-scale=1.0">
+
+<title>Change Heading Color</title>
+
+<link rel = "stylesheet" href = "styles.css">
+
+</head>
+<style>
+body {
+
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 50px;
+}
+h1 {
+transition: background-color 0.5s ease;
+padding: 20px;
+}
+button {
+padding: 10px 20px;
+font-size: 16 px;
+cursor: pointer;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+margin-top: 20px;
+}
+button:hover {
+background-color: #45a049;
+}
+
+</style>
+<body>
+<h1 id = "heading"> Click the button to change my color!</h1>
+
+<button id = "colorButton"></h1>Change Color</button>
+
+
+
+<script src = "script.js"></script>
+<script>
+const colors = ['blue', 'red', 'green', 'yellow', 'orange', 'purple', 'pink']
+
+const button = document.getElementById('colorButton');
+
+const heading = document.getElementById('heading');
+
+
+
+function getRandomColor() {
+
+const randomIndex = Math.floor(Math.random() * colors.length);
+
+return colors[randomIndex];
+
+}
+
+button.addEventListener('click', function() {
+
+const randomColor = getRandomColor();
+
+heading.style.backgroundColor= randomColor;
+
+});
+</script>
+</body>
+
+
+
+</html>
+
