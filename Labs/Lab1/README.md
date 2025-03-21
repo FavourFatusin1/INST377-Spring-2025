@@ -20,6 +20,7 @@ Install the Live Server extension.
 Right-click lab1.html and select Open with Live Server.
 
 **Technologies Used:**
+
 HTML
 
 VSCode with Live Server & Prettier
