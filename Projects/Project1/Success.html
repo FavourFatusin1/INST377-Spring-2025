@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>SuccessPage</title>
+    <style>
+   
+    body { 
+    background-color: green;
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    }
+
+   
+    </style>
+</head>
+
+<body>
+<h1>Thanks for submitting, we will reach out soon!</h1>
+<br><br>
+<h2>You will be redirected to the Homepage within the next 5 seconds. If not,please click the Home page Icon below to be redirected.</h2>
+<a href="homepage.html" class="logo-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo">
+</a>
+
+<script>
+    setTimeout(function() {
+        window.location.href = "homepage.html"; 
+    }, 5000);
+</script>
+</body>
+
+</html>
