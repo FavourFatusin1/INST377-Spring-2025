@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Gamespage</title>
+    <style>
+    body { 
+    background-color: #92DCE5;
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    }
+
+
+    #bar{
+    text-align: center; 
+    color: white;
+    background-color: #7c7c7c;
+    padding: 10px;
+    width:100%;}
+
+    #main-nav{ background-color: black;
+            color:white;
+            text-align: center
+           
+            
+    }
+
+    #main-nav li:hover 
+  { background-color: coral;
+   color:white;
+   
+   
+  }
+  #main-nav ul li {
+   list-style: none;
+   display: inline-block;
+   text-align: center;
+   padding: 10px;
+
+  }
+
+  .box {
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+     <header id="bar">
+        <h1>Games</h1>
+        
+     </header>
+
+      <nav id="main-nav">
+          <ul>
+            <li><a class="nav-link" href="homepage.html">Home</a></li>
+            <li><a class="nav-link" href="gamespage.html">Games</a></li>
+            <li><a class="nav-link" href="contactspage.html">Contact</a></li>
+          </ul>
+      </nav>
+    
+    <form onsubmit="Game(); return false;">
+        <h1>Rock,Paper,Scissors</h1>
+        <label for="main-content"></label>
+        <select name="main-content" id="main-content" required>
+        <option value="Rock">Rock</option>
+        <option value="Scissors">Scissors</option>
+        <option value="Paper">Paper</option> 
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="container">
+        <div class="box" id="userChoice">You Chose: <span id="userSelection"></span></div>
+        <div class="box" id="computerChoice">Computer Chose: <span id="computerSelection"></span></div>
+    </div>
+    
+    <br><br>
+    <footer id="bar">
+        <p>Copyright of someone, somewhere</p>
+    </footer>
+
+        <script>
+            function Game() {
+            const choices = ["Rock", "Paper", "Scissors", "Spock"]; // Added "Spock" for the computer
+            const userChoice = document.getElementById("main-content").value;
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            document.getElementById("userSelection").innerText = userChoice;
+            document.getElementById("computerSelection").innerText = computerChoice;
+
+            let result;
+            
+            if (computerChoice === "Spock") {
+                result = "You Lose"; // Spock means an automatic loss
+                document.body.style.backgroundColor = "red";
+            } else if (
+                (userChoice === "Rock" && computerChoice === "Scissors") ||
+                (userChoice === "Paper" && computerChoice === "Rock") ||
+                (userChoice === "Scissors" && computerChoice === "Paper")
+            ) {
+                result = "You Win";
+                document.body.style.backgroundColor = "green";
+            } else if (userChoice === computerChoice) {
+                result = "Tie";
+                document.body.style.backgroundColor = "blue";
+            } else {
+                result = "You Lose";
+                document.body.style.backgroundColor = "red";
+            }
+
+            alert(result);
+    }
+
+         </script>
+
+</body>
+
+</html>  
