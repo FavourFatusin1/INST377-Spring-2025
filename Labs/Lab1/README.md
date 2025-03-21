@@ -6,6 +6,7 @@ This is my submission for INST377 Lab 1. The goal of this lab was to create a si
 
 
 **How to View the Page**
+
 Clone the repository:
 
 git clone <repository-url>
