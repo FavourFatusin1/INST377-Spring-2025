@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Contact Me!</title>
+    <style>
+    body { 
+    background-color: #e592db;
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    }
+
+
+    #bar{
+    text-align: center; 
+    color: white;
+    background-color: #7c7c7c;
+    padding: 10px;
+    width:100%;}
+
+    #main-nav{ background-color:black;
+            color:white;
+            text-align: center
+    }
+
+    #main-nav li:hover 
+  { background-color: coral;
+   color:white;
+   
+  }
+  #main-nav ul li {
+   list-style: none;
+   display: inline-block;
+   text-align: center;
+   padding: 10px;
+
+  }      
+   
+
+
+
+    </style>
+</head>
+
+<body>
+
+     <header id="bar">
+        <h1>Contact Me!</h1>
+     </header>
+
+      <nav id="main-nav">
+          <ul>
+            <li><a class="nav-link" href="homepage.html">Home</a></li>
+            <li><a class="nav-link" href="gamespage.html">Games</a></li>
+            <li><a class="nav-link" href="contactspage.html">Contact</a></li>
+          </ul>
+      </nav>
+    <h1>Have Questions? Feel free to reach out! </h1>
+    <form id="contactForm"  onsubmit="return validateForm()">
+        <div class="contact">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" required> 
+        </br>
+        </div>
+        <div class="contact">
+            <label for="Name">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="contact">
+            <label for="Name">Concern:</label>
+            <textarea id="bigText" name="bigText" required>
+            </textarea>
+        </div>
+    <button>Submit</button>
+
+    </form>
+    <br><br>
+    <footer id="bar">
+    <p>Copyright of someone, somewhere</p>
+    </footer>
+    
+      <script>
+        function validateForm() {
+          var message = document.getElementById('bigText').value;
+          var regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+    
+          if (regex.test(message)) {
+            alert('Message cannot contain special characters.');
+            return false; 
+          }
+          window.location.href= "successformpage.html"
+          return false;
+          
+        }
+      </script>
+</body>
+
+</html>
