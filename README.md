@@ -3,7 +3,7 @@
 
 Welcome! This repository showcases coursework completed for **INST377 - Dynamic Web Applications**
 
-## 📚 Course Overview
+## Course Overview
 
 **INST377** explores the foundational methods and tools for developing dynamic, database-driven websites. Topics covered include:
 
@@ -32,7 +32,7 @@ This repo contains various assignments and projects demonstrating my understandi
 - CRUD operations
 - Server configuration and routing
 
-## 🔗 About the Course
+##  About the Course
 
 - **Course Title:** INST377 - Dynamic Web Applications  
 - **Institution:** University of Maryland, College of Information Studies  
